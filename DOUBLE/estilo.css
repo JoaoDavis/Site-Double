@@ -1,0 +1,1888 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Advent+Pro:wght@100;200&family=JetBrains+Mono:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Advent+Pro:wght@100;200&family=JetBrains+Mono:ital,wght@0,100;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Jacques+Francois&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    clear: both;
+}
+
+.area-menu {
+    position: sticky;
+    top: 0px;
+    background-color: #043969;
+    display: grid;
+    grid: "a1 a2";
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 5fr;
+    text-align: center;
+    z-index: 900000000;
+}
+
+.area-links-menu {
+    display: grid;
+    grid: "1 2 3 4 5";
+}
+
+.itens-menu {
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 60px;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.2vw;
+    transition: 0.5s;
+    display: grid;
+    align-items: center;
+    grid: "1 2";
+    grid-template-columns: 100fr 1fr;
+}
+
+.itens-menu:hover {
+    color: #ffffff;
+    transform: scale(1.03);
+}
+
+.itens-menu::after {
+    content: url('imagens/div-menu.png');
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.area-logo {
+    transition: 0.5s;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    z-index: 500;
+    width: 280px;
+}
+
+.area-pesquisa {
+    position: sticky;
+    top: 105px;
+    z-index: 900000000;
+    background-color: #4A88E4;
+    line-height: 30px;
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    grid: "logo-lupa barra-pesquisar logo-login logo-carrinho" 50px;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+}
+
+.logo-lupa {
+    z-index: 10000;
+    display: grid;
+    align-items: center;
+    justify-content: end;
+    margin-right: -40px;
+}
+
+.barra-pesquisar {
+    height: 30px;
+    width: 80vw;
+    border-radius: 20px;
+    border: none;
+    padding: 0px 60px;
+    font-size: 16px;
+}
+
+.barra-pesquisar:focus, select:focus {
+    outline: 0;
+}
+
+.area-logo-login {
+    display: grid;
+    justify-content: end;
+    cursor: pointer;
+}
+
+.logo-login {
+    transition: transform 0.3s;
+}
+
+.logo-login:hover {
+    transform: scale(1.1);
+}
+
+.area-logo-carrinho {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.logo-carrinho {
+    transition: transform 0.3s;
+}
+
+.logo-carrinho:hover {
+    transform: scale(1.1);
+}
+
+.img-fundo-inicial {
+    width: 100%;
+}
+
+.banner-double {
+    display: grid;
+    justify-content: center;
+    margin-top: -200px;
+}
+
+.banner-principal {
+    animation-name: pula-banner;
+    position: relative;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pula-banner {
+   100% {transform: scale(1.05);}
+}
+
+.linhas-divisao {
+    margin: 0;
+}
+
+.linha-azul {
+    height: 10px;
+    width: 100%;
+    background-color: #4A88E4;
+}
+
+.linha-amarela {
+    height: 10px;
+    width: 100%;
+    background-color: #FDC119;
+}
+
+.areas-bloco {
+    transition: 0.5s;
+}
+
+.areas-bloco:hover {
+    transform: scale(1.05);
+}
+
+.link-produtos {
+    display: grid;
+    grid: "b1 b2 b3 b4" 300px
+    "b5 b6 b7 b8";
+    grid-template-columns: 400px 400px 400px 400px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.conteudo-blocos {
+    margin-left: 60px;
+}
+
+.imagens-produtos {
+    margin-top: -200px;
+    margin-left: 100px;
+}
+
+.nome-produto {
+    color: #043969;
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+    display: inline-block;
+    margin: 20px 58px;
+}
+
+.smartphone-img {
+    margin-top: -9.5px;
+    margin-right: -22px;
+}
+
+.t2 {
+    margin-top: -30px;
+}
+
+.monitor-img {
+    margin-bottom: -150px;
+    margin-left: 8px;
+}
+
+.t3 {
+    margin-top: 170px;
+}
+
+.computador-img {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.tablet-img {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.headset-img {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.t6 {
+    margin-top: 10px;
+}
+
+.cadeira-img {
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+.t7 {
+    margin-top: -25px;
+}
+
+.webcam-img {
+    margin-top: 25px;
+    margin-left: 35px;
+}
+
+.t8 {
+    margin-top: 35px;
+}
+
+.titulo-area-produtos {
+    margin: 100px 0 70px 212px;
+    font-size: 2vw;
+    font-family: 'Abel', sans-serif;
+    font-weight: 600;
+    color: #043969;
+}
+
+.linhas2 {
+    z-index: 2;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.area-blocos-descicao {
+    z-index: 100;
+    margin-top: -130px; 
+    margin-left: 100px; 
+}
+
+.bloco-sobe-amarelo {
+    z-index: 80;
+    margin-left: -340px;
+    margin-bottom: -70px;
+}
+
+.titulo-blocos-cursos {
+    display: inline-block;
+    text-align: center;
+    z-index: 110;
+    margin-left: -397px;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.area-blocos-cursos {
+    display: grid;
+    justify-content: center;
+    margin-top: 150px;
+    
+}
+
+.blocos-cursos {
+    display: grid;
+    grid: 
+    "titulo-blocos-cursos area-logo-cursos" 90px
+    "area-img-demonstra-curso descricao-curso" 200px
+    "centraliza-botao" 50px;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 60px 290px 45px;
+    row-gap: 10px;
+    background-color: rgba(0, 0, 0, 3%);
+    margin-bottom: 80px;
+    width: 50vw;
+    border-radius: 20px;
+    padding: 20px 50px;
+    transition: transform 2s;
+}
+
+.blocos-cursos:hover {
+    transform: scale(1.07);
+    background-color: rgba(0, 0, 0, 5%);
+}
+
+.bc3 {
+    margin-bottom: 50px;
+}
+
+.titulo-cursos {
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 25px;
+    color: #043969;
+    font-weight: 600;  
+    margin-right: 10px;
+}
+
+.area-logo-cursos {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100px;
+}
+
+.area-img-demonstra-curso {
+    display: grid;
+    align-items: center;
+}
+
+.descricao-curso {
+    display: grid;
+    margin-top: 35px;
+    font-size: 24px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+}
+
+.centraliza-botao {
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    text-decoration: none;
+}
+
+.butao-mais {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    height: 30px;
+    width: 200px;
+    background-color: #043969;
+    border-radius: 20px;
+    color: #ffffff;
+}
+.texto-mais {
+    background-color: #C64C4C;
+    color: #ffffff;
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    padding: 5px 60px;
+    border-radius: 20px;
+    transition: transform 0.5s;
+}
+
+.texto-mais:hover {
+    background-color: #B63C3C;
+    transform: scale(1.1);
+}
+
+.mais-cursos {
+    display: grid;
+    justify-content: center;
+}
+
+.rodape {
+    margin-top: 80px;
+}
+
+.area-cima-rodape {
+    background-color: #043969;
+}
+
+.espaco-vazio {
+    background-color: #043969;
+    margin-top: 100px;
+    height: 180px;
+}
+
+.linha-divisao-branca {
+    background: #ffffff;
+    width: 100%;
+    height: 3px;
+}
+
+.area-baixo-linha {
+    display: grid;
+    grid: "area-todos-direitos area-midias" 1fr;
+    grid-template-columns: 1fr 3fr;
+}
+
+.area-todos-direitos {
+    display: grid;
+    justify-content: center;
+}
+
+.area-midias {
+    display: grid;
+    grid: "insta face twit disc" 55px;
+    grid-template-columns: 200px 200px 200px 200px;
+    justify-items: center;
+    align-content: center;
+    margin-left: 20px;
+}
+.area-logos {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    transition: transform 0.8s;
+}
+
+.area-logos:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.nome-midia {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.area-menina {
+    display: grid;
+    justify-content: end;
+    z-index: 1000;
+    margin-top: -495px;
+    margin-right: 100px;
+}
+
+.logo-rodape {
+    z-index: 500;
+    margin-top: -80px;
+    margin-left: 100px;
+}
+
+.fundo-baixo-rodape {
+    z-index: 100;
+}
+
+.fundo-baixo {
+    z-index: 100;
+    width: 100%;
+}
+
+@media (max-width: 1500px) {
+
+    .logo {
+        width: 200px;
+    }
+
+    .area-menu {
+        display: grid;
+        grid: "1" "1";
+    }
+
+    .itens-menu {
+        font-size: 1.7vw;
+    }
+
+    .area-logo {
+        padding: 10px 0;
+    }
+
+    .barra-pesquisar {
+        width: 60vw;
+    }
+
+    .logo-login, .logo-carrinho {
+        width: vw;
+    }
+
+    .banner-double {
+        margin-top: -150px;
+    }
+
+    .banner-principal {
+        width: 700px;
+    }
+
+    .titulo-area-produtos {
+        font-size: 2.6vw;
+    }
+
+    .link-produtos {
+        display: grid;
+        grid: "bcp1 bcp2 bcp3"
+        "bcp4 bcp5 bcp6"
+        "bcp7 bcp7 bcp8";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .bloco-amarelo, .bloco-sobe-amarelo {
+        width: 350px;
+    }
+
+    .bloco-sobe-amarelo {
+        margin-left: -300px;
+        margin-bottom: -60px;
+    }
+
+    .titulo-blocos-cursos {
+        font-size: 25px;
+        margin-left: -328px;
+    }
+
+    .blocos-cursos {
+        display: grid;
+        padding-right: 150px;
+    }
+
+    .descricao-curso {
+        padding-left: 20px;
+    }
+
+    .bc2 .titulo-cursos {
+        margin-right: 20px;
+    }
+
+    .bc3 .titulo-cursos {
+        margin-right: 40px;
+    }
+}
+
+/************ TELA LOGIN  ***********
+********************************************
+********************************************
+*******************************************/
+
+.fundo-login {
+    z-index: 1;
+    width: 100%;
+    height: 957.43px;
+    margin: 0;
+}
+
+.area-conteudo-geral-login {
+    z-index: 100000;
+    margin-top: -900px;
+    display: grid;
+    grid: "area-pessoas-tela-login area-conteudo-login" 900px;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    align-items: center;
+    justify-items: end;
+}
+
+.area-pessoas-tela-login {
+    z-index: 300;
+    margin-right: -130px;
+}
+
+.pessoas-login {
+    animation-name: pula-login;
+    position: relative;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pula-login {
+   100% {transform: scale(1.05);}
+}
+
+.area-conteudo-login {
+    z-index: 100;
+    background-color: rgba(228, 213, 213, 0.15);
+    width: 780px;
+    height: 100%;
+    margin-top: -60px;
+    margin-right: 300px;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.area-logo-tela-login {
+    margin-top: -250px;
+}
+
+.espaco-login {
+    margin-top: -50px;
+}
+
+.texto-inserir {
+    display: grid;
+    font-size: 26px;
+    font-family: 'Abel', sans-serif;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+
+
+.insere-barra:focus, select:focus {
+    outline: 0;  
+}
+
+.botao-logar {
+    margin: 25px 0;
+    display: grid;
+    justify-content: center;
+}
+
+#logar {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0788D9;
+    padding: 5px 80px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-family: 'JetBrains Mono', monospace;
+    transition: transform 0.5s;
+}
+
+#logar:hover {
+    background-color: #2163c7;
+    transform: scale(1.1);
+}
+
+.cadastrar {
+    display: grid;
+    grid: "texto-cadastra link-cadastrar";
+    grid-template-columns: 2fr 1fr;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+}
+
+.texto-cadastra {
+    font-size: 16px;
+    margin-right: 9px;
+}
+
+.link-cadastrar {
+    font-size: 16px;
+    color: #ffffff;
+    transition: transform 0.6s;
+}
+
+.link-cadastrar:hover {
+    transform: scale(1.1);
+}
+
+/************ TELA PRODUTO  ****************
+********************************************
+********************************************
+*******************************************/
+
+.banner-produto {
+    width: 100%;
+    z-index: 200;
+}
+
+.area-meninas-banner {
+    display: grid;
+    grid: "menina2 menina1";
+    width: 100%;
+    margin-top: -450px;
+    height: 750px;
+    z-index: 500;
+}
+
+.menina2 {
+    display: grid;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+.menina1 {
+    display: grid;
+    align-items: flex-end;
+    margin-left: 100px;
+}
+
+.area-men-prod {
+    transition: transform 1s;
+}
+
+.area-men-prod:hover {
+    transform: scale(1.03);
+}
+
+.area-logo-double-prod {
+    z-index: 10000;
+    display: grid;
+    justify-content: center;
+    margin-top: -750px;
+}
+
+.blocos-conteudos-produtos {
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    row-gap: 20px;
+    padding: 45px 30px;
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 5%);
+    border-radius: 12px;
+    margin-bottom: 80px;
+}
+
+.area-conteudo-produto {
+    display: grid;
+    justify-content: center;
+    margin-top: 700px;
+}
+
+.produtos-amostras {
+    display: grid;
+    grid: "amostra-prod1 amostra-prod2 amostra-prod3";
+    grid-template-columns: 400px 400px 400px;
+    column-gap: 100px;
+    justify-items: center;
+}
+
+.amostra-produto {
+    display: grid;
+    grid-template-columns: 340px;
+    transition: transform 0.7s;
+    margin-top: 10px;
+    text-decoration: none;
+    height: 100%;
+}
+
+.amostra-produto:hover {
+    transform: scale(1.03);
+}
+
+.titulo-blocos-produtos {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 30px;
+}
+
+.area-titulo-blocos-produtos {
+    display: grid;
+    grid: "titulo-blocos-produtos area-seta";
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    transition: transform 0.6s;
+}
+
+.area-titulo-blocos-produtos:hover {
+    margin-right: -15px;
+}
+
+.area-imagem-prod {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    border-radius: 12px 12px 0 0;
+    background-color: #ffffff;
+}
+
+.area-texto-amostra {
+    background-color: #043969;
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    padding: 50px 0;
+    border-radius: 0 0 12px 12px;
+    font-family: 'JetBrains Mono', monospace;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.cel1 {
+    margin-bottom: -50px;
+}
+
+.marcas-smartphones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.area-circulos {
+    background-color: #4A88E4;
+    padding: 70px;
+    border-radius: 10000000px;
+    transition: transform 0.5s;
+}
+
+.area-circulos:hover {
+    transform: scale(1.05);
+}
+
+.area-menino {
+    display: grid;
+    justify-content: end;
+    z-index: 1000;
+    margin-top: -537px;
+    margin-right: 100px;
+}
+
+.todos-produtos {
+    display: grid;
+    justify-content: center;
+}
+
+.area-todos-produtos {
+    background-color: #C64C4C;
+    color: #ffffff;
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    padding: 5px 60px;
+    border-radius: 20px;
+    transition: transform 0.5s;
+}
+
+.area-todos-produtos:hover {
+    background-color: #B63C3C;
+    transform: scale(1.1);
+}
+
+/************ TELA CURSOS ******************
+********************************************
+********************************************
+*******************************************/
+
+.fundo-cursos {
+    width: 100%;
+    z-index: 10;
+}
+
+.area-conteudo-sob-fundo-cursos {
+    z-index: 300;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    grid-template-columns: 100%;
+    grid-template-rows: 130px 100px 100px;
+    grid-auto-rows: 150px;
+    margin-top: -750px;
+}
+
+.area-logo-cursos {
+    margin-right: -100px;
+}
+
+.area-texto-fundo-cursos {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 35px;
+    font-weight: bolder;
+    color: #ffffff;
+    display: grid;
+    height: 100%;
+}
+
+.buscar-cursos {
+    width: 500px;
+    height: 28px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    padding: 5px 15px;
+    font-size: 16px;
+    color: #ffffff;
+    background: transparent;
+}
+
+.buscar-cursos::placeholder {
+    color: #ffffff;
+}
+
+.buscar-cursos:focus, select:focus {
+    outline: 0;  
+}
+
+.buscar-cursos:focus, select:focus {
+    outline: 0;
+}
+
+.area-estudante-cursos {
+    display: grid;
+    justify-content: right;
+    margin-top: -330px;
+    margin-right: 10px;
+}
+
+.area-cursos {
+    z-index: 1000;
+    display: grid;
+    grid: "bc-curso1 bc-curso2 bc-curso3" 350px
+    "bc-curso4 bc-curso5 bc-curso6" 350px
+    "bc-curso7 bc-curso8 bc-curso9" 350px;
+    grid-template-columns: 400px 400px 400px;
+    column-gap: 200px;
+    row-gap: 80px;
+    justify-content: space-evenly;
+    justify-items: center;
+    width: 100%;  
+    margin-top: -230px;
+}
+
+.bloco-curso {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 1fr 3fr;
+    padding-top: 15px;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    transition: transform 0.5s;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 10%);
+}
+
+.bloco-curso:hover {
+    transform: scale(1.05);
+}
+
+.titulo-bloco {
+    width: 100%;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    display: grid;
+    align-items: end;
+    grid-auto-rows: 1fr;
+}
+
+.nome-curso1 {
+    color: #043969;
+}
+
+.nome-curso2 {
+    color: #ffffff;
+    height: 100%;
+    margin-bottom: -5px;
+    background-color: #043969;
+}
+
+.area-preco-curso {
+    display: grid;
+    grid-template-rows: 20px 140px 30px;
+    border-radius: 0 0 12px 12px;
+    text-align: center;
+    width: 100%;
+    background-color: #043969;
+}
+
+.quant-horas {
+    display: grid;
+    justify-content: end;
+    margin: 15px 15px;
+    font-family: 'Abel', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.preco {
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    margin-left: 60px;
+    margin-top: -30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 27px;
+}
+
+.menina-rodape-cursos {
+    margin-top: 10px;
+}
+
+/************ TELA QUEM SOMOS  *************
+********************************************
+********************************************
+*******************************************/
+
+.fundo-quem-somos {
+    width: 100%;
+}
+
+.area-bola-logo {
+    margin-top: -250px;
+    margin-left: 130px;
+}
+
+.area-barra-lateral-direita {
+    width: 100%;
+    height: 100%;
+    margin-top: -810px;
+}
+
+.barra-lateral-direita {
+    z-index: 200;
+    display: grid;
+    justify-items: end;
+}
+
+.barra-direita {
+    z-index: 200;
+    width: 40%;
+    height: 2000px;
+    background-color: #FFBC00;
+}
+
+.area-menina-quem-somos {
+    z-index: 1000;
+    display: grid;
+    justify-items: end;
+    margin-top: -2150px;
+    margin-right: 170px;
+}
+
+.menina-quem-somos {
+    z-index: 1000;
+    animation-name: pula-banner;
+    position: relative;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.area-texto-quem-somos {
+   display: inline-block;
+   padding-left: 150px;
+   padding-top: 100px;
+   font-family: 'JetBrains Mono', monospace;
+   font-weight: 500;
+   font-size: 28px;
+   color: #000000;
+}
+
+.area-texto-barra-lateral {
+    z-index: 20000;
+    margin-top: 600px;
+    display: grid;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.linhas-quem {
+    margin-top: 300px;
+}
+
+.area-logos-conhecimentos {
+    display: grid;
+    grid: "conhec1 conhec2 conhec3 conhec4 conhec5 conhec6" 150px
+    "conhec7 conhec8 conhec9 conhec10 conhec11 conhec12" 150px
+    "conhec13 conhec14 conhec15 conhec16 conhec11 conhec12" 150px;
+    grid-auto-columns: 150px;
+}
+
+.area-conhecimentos {
+    margin-top: 550px;
+    margin-left: 150px;
+}
+
+.titulo-conhecimento {
+    font-size: 30px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    color: #043969;
+    margin-bottom: 20px;
+}
+
+.logo-cursos-conheci {
+    transition: transform 0.5s;
+}
+
+.logo-cursos-conheci:hover {
+    transform: scale(1.1);
+}
+
+.area-homem-quem {
+    display: grid;
+    justify-items: end;
+    width: 100%;
+}
+
+.homem-quem-somos {
+    width: 100%;
+}
+
+.area-todos-direitos-quem {
+    margin-top: -300px;
+    display: grid;
+    justify-content: center;
+}
+
+.rodape-quem {
+    margin-top: 255px;
+}
+
+.mais-quem {
+    display: grid;
+    justify-content: start;
+    margin-left: 350px;
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+.mais-texto {
+    padding: 6px 80px;
+}
+
+.texto-promo {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 200px;
+    text-align: center;
+    color: #043969;
+    font-weight: 900;
+}
+
+/************ TELA CONTATO  ****************
+********************************************
+********************************************
+*******************************************/
+
+.area-geral-contato {
+    display: grid;
+    grid: "area-barra-esquerda-contato area-conteudo-contato";
+    grid-template-columns: 1fr 2fr;
+}
+
+.area-barra-esquerda-contato {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+    background-color: #4A88E4;
+}
+
+.area-reclame-contato {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.titulo-reclame {
+    font-family: 'Jacques Francois', serif;
+    font-size: 25px;
+    color: #ffffff;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-reclamacao textarea {
+    border-radius: 16px;
+    padding: 8px 10px;
+    font-size: 15px;
+}
+
+.area-reclamacao textarea::placeholder {
+    text-align: center;
+}
+
+.area-direitos-contato {
+    display: grid;
+    justify-content: center;
+}
+
+.area-conteudo-contato {
+    order: 2;
+    display: grid;
+    justify-content: center;
+}
+
+.primeiro-titulo-contato {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    margin-top: 100px;
+}
+
+.area-numero-contato {
+    display: grid;
+    grid: "logo-wpp-contato numero-contato";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-wpp-contato {
+    display: grid;
+    justify-items: end;
+    transition: transform 0.5s;
+}
+
+.logo-wpp-contato:hover {
+    transform: scale(1.05);
+}
+
+.numero-contato {
+    font-size: 35px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 550;
+    display: grid;
+    justify-content: center;
+}
+
+.texto-contato {
+    text-align: center;
+    font-family: 'Graduate', cursive;
+    font-size: 40px;
+    margin: 100px 0;
+}
+
+.titulo-redes-contato {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.sociais-contato {
+    display: grid;
+    grid: "logo-redes-contato descricao-redes";
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 20px;
+}
+
+.logos-sociais {
+    width: 55px;
+}
+
+.descricao-redes {
+    font-size: 25px;
+}
+
+.area-menina-contato {
+    z-index: -100;
+    display: grid;
+    justify-content: end;
+    margin-right: -275px;
+    margin-top: -300px;
+}
+
+/************ TELA MONITORES  **************
+********************************************
+********************************************
+*******************************************/
+
+.area-banner-monitores {
+    display: grid;
+    grid-template-rows: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-conteudo-produtos {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+.bloco-conteudos-produtos {
+    background-color: rgba(0, 0, 0, 5%);
+    width: 90%;
+    display: grid;
+    padding: 25px 30px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
+
+.amostra-compra-prod {
+    display: grid;
+    grid:
+    "area-demonstra-prod" 
+    "area-preco-produto";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    border-radius: 12px;
+}
+
+.monitores-amostras {
+    display: grid;
+    grid: "produto-1 produto-2 produto-3 produto-4";
+    grid-template-rows: 1fr;
+    column-gap: 50px;
+}
+
+.area-demonstra-prod {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    background-color: #ffffff;
+    border-radius: 12px 12px 0 0;
+    padding: 20px 0 15px 0;
+    width: 100%;
+}
+
+.area-preco-produto {
+    display: grid;
+    grid-auto-rows: 1fr;
+    width: 100%;
+    border-radius: 0 0 12px 12px;
+    padding: 20px 0px;
+    background-color: #043969;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+}
+
+.nome-produto-descricao {
+    font-size: 24px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.area-desc-preco {
+    display: grid;
+    grid: "desconto-produto preco-produto" 1fr;
+    text-align: center;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.desconto-produto {
+    color: #FFBC00;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.preco-produto {
+    font-size: 27px;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+}
+
+.area-botao-comprar {
+    display: grid;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.botao-comprar-carrinho {
+    text-align: center;
+    display: grid;
+    align-items: center;
+    width: 130px;
+    height: 30px;
+    border-radius: 12px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #4B6893;
+    transition: transform 0.6s;
+}
+
+.botao-comprar-carrinho:hover {
+    transform: scale(1.05);
+}
+
+.homem-tela-prod {
+    margin-top: -550px;
+}
+
+/************ TELA CARRINHO  ***************
+********************************************
+********************************************
+*******************************************/
+
+
+.area-central-carrinho { 
+    display: grid;
+    grid: "area-bloco-total-produtos area-produtos-carrinho-comprar";
+    grid-template-columns: 1fr 2fr;
+    height: 600px;
+}
+
+.area-bloco-total-produtos {
+    width: 100%;
+    height: 100%;
+}
+
+.bloco-total-produtos {
+    width: 80%;
+    height: 95%;
+    background-color: #043969;
+    margin-left: 30px;
+    margin-top: 20px;
+    padding: 15px 25px;
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    border-radius: 12px;
+}
+
+.barra-branca-carrinho {
+    height: 3px;
+    background-color: #ffffff;
+    margin: 15px 0;
+}
+
+.titulo-cep {
+    margin-bottom: 20px;
+}
+
+.inserir-cep {
+    width: 80%;
+    height: 25px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.titulo-total {
+    margin-bottom: 50px;
+}
+
+.area-produtos-carrinho-comprar {
+    height: 100%;
+    width: 95%;
+    margin-top: 20px;
+    border-radius: 12px;
+    background-color: rgba(202, 197, 197, 0.3);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.centraliza-area-prod-compra {
+    display: grid;
+    justify-items: center;
+    height: 100%;
+}
+
+.texto-nada-carrinho {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #0788D9;
+    margin-top: -40px;
+}
+
+.area-imagem-gato {
+    margin-top: -80px;
+}
+
+.linha-div-carrinho {
+    width: 100%;
+    height: 5px;
+    background-color: #043969;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.mais-produtos-carrinho {
+    display: grid;
+    grid: " b b b b b b";
+    column-gap: 30px;
+    grid-auto-columns: 1fr;
+    padding: 15px 20px;
+    background-color: rgba(202, 197, 197, 0.3);
+}
+
+.blocos-prod-carrinho-mais {
+    background-color: #ffffff;
+    border-radius: 12px;
+    display: grid;
+    align-items: center;
+    grid-auto-rows: 1fr;
+    justify-items: center;
+    padding-top: 10px;
+    transition: 0.6s;
+}
+
+.blocos-prod-carrinho-mais:hover {
+    transform: scale(1.02);
+}
+
+.mais-prod-carrinho {
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    font-size: 42px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.barra-baixo-mais {
+    height: 3px;
+    background-color: #043969;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.preco-prod-mais-carrinho {
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    color: #ffffff;
+    height: 100%;
+    background-color: #0788D9;
+    width: 100%;
+    border-radius: 0 0 12px 12px;
+    display: grid;
+    align-items: center;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++
++++++++++++ DESENVOLVIMENTO WEB ++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+.background {
+    width: 100%;
+    z-index: 20;
+}
+
+.fundo-desenvolv {
+    width: 100%;
+}
+
+.area-conteudo-desenvolvimento {
+    display: grid;
+    grid: "1 1"
+    "1 1";
+    grid-template-columns: 1fr 2fr;
+    margin-top: -650px;
+    z-index: 100000;
+}
+
+.banner-desenvolvimento-area {
+    display: grid;
+    grid-area: 1 / 1 / 2 / 1;
+    justify-content: center;
+    margin-top: -30px;
+}
+
+.banner-desenvolvimento {
+    animation-name: pula-desenvolve;
+    position: relative;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pula-desenvolve {
+   100% {transform: scale(1.05);}
+}
+
+.area-circulos-conhecimentos {
+    display: grid;
+    grid-area: 2 / 2 / 2 / 2;
+}
+
+.titulo-texto-desenvolvimento {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    z-index: 800000;
+    text-align: center;
+}
+
+.texto-conteudo-desenvolvimento {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 25px;
+    z-index: 9000000;
+}
+
+.area-texto-desenvolvimento {
+    display: grid;
+    justify-content: center;
+    color: #ffffff;
+    grid-template-rows: 1fr 3fr;
+}
+
+.area-circulos-conhecimentos {
+    display: grid;
+    grid: "1 1 1 1 1";
+    column-gap: 10px;
+    justify-items: center;
+}
+
+.circulos-conhecimentos {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #4A88E4;
+    height: 150px;
+    width: 150px;
+    border-radius: 1000px;
+    color: #ffffff;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.circulos-conhecimentos:hover {
+    transform: scale(1.1);
+}
+
+.conhec1 {
+    margin-top: -250px;
+}
+
+.conhec2 {
+    margin-top: -150px;
+}
+
+.conhec3 {
+    margin-top: -50px;
+}
+
+.conhec4 {
+    margin-top: 70px;
+}
+
+.conhec5 {
+    margin-top: 170px;
+}
+
+.area-preco-curso-tela {
+    border: 3px solid #4A88E4;
+    width: 25%;
+    display: grid;
+    justify-items: center;
+    padding: 30px 20px 80px 20px;
+    margin-left: 4vw;
+    margin-top: -20vh;
+    row-gap: 3vh;
+    margin-bottom: 50px;
+}
+
+.titulo-preco-curso-tela {
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    color: #043969;
+}
+
+.area-preco-parcela-curso {
+    display: grid;
+    grid: "1 1";
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    align-items: center;
+    column-gap: 0.4vw;
+}
+
+.parcela-curso {
+    font-size: 20px;
+}
+
+.preco-parcelado, .preco-cheio {
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+    font-size: 35px;
+    color: #4A88E4;
+}
+
+.barra-bloco-preco {
+    height: 4px;
+    width: 100%;
+    background-color: #043969;
+}
+
+.comprar-botao-preco {
+    font-family: 'Inter', sans-serif;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: #4A88E4;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 2px 60px;
+    margin-top: 40px;
+    transition: 0.6s;
+}
+
+.comprar-botao-preco:hover {
+    transform: scale(1.05);
+}
+
+/************ TELA CADASTRAR  **************
+********************************************
+********************************************
+*******************************************/
+
+#fundo-cadastro {
+    background: linear-gradient(0deg, rgba(2,0,36,1) 2%, rgba(4,57,105,1) 41%, rgba(7,136,217,1) 88%);
+    display: grid;
+    align-items: center;
+    height: 960px;
+}
+
+#area-cadastrar {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#areas-bloco-cadastro {
+    display: grid;
+    grid: "1 1";
+    grid-auto-columns: 350px;
+    align-items: center;
+    column-gap: 50px;
+    height: 100%;
+}
+
+.blocos-cadastro-escolha {
+    width: 100%;
+    height: 100%;
+    background-color: #0788D9;
+    border-radius: 12px;
+    display: grid;
+    justify-content: center;
+    padding: 20px 10px;
+    justify-items: center;
+    transition: 1s;
+    text-decoration: none;
+}
+
+.blocos-cadastro-escolha:hover {
+    transform: scale(1.03);
+}
+
+.area-icon-usu {
+    display: grid;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10000px;
+    justify-content: center;
+    width: 90px;
+    margin: 10px 0;
+}
+
+.texto-bloco-cadastro {
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+/********* TELA CADASTRO USUÁRIO  **********
+********************************************
+********************************************
+*******************************************/
+
+#fundo-cadastro-usu {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #d6e6fd;
+}
+
+#bloco-cadastro {
+    width: 80%;
+    height: 900px;
+    display: grid;
+    grid: "1 1";
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: #043969;
+    margin-top: 40px;
+}
+
+#area-img-cadastro {
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+#area-entrada-cadastro {
+    display: grid;
+    grid: "1" "1" "1";
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+}
+
+#form-tela-cadastro-usu {
+    display: grid;
+    grid: "1 1";
+    column-gap: 100px;
+    row-gap: 20px;
+}
+
+.titulo-cadastro {
+    color: #ffffff;
+    font-size: 35px;
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+}
+
+.texto-insere-cadastro {
+    font-family: 'Abel', sans-serif;
+    font-size: 23px;
+    color: #ffffff;
+}
+
+.insere-cadastro {
+    width: 250px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.insere-cadastro:focus, select:focus {
+    outline: 0;
+}
+
+#fundo-botao-cadast {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+#botao-cadastrar {
+    background-color: #ffffff;
+    font-family: 'Abel', sans-serif;
+    font-size: 23px;
+    color: #d6e6fd;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: #043969;
+    transition: 0.5s;
+}
+
+#botao-cadastrar:hover {
+    transform: scale(1.05);
+}
